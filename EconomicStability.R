@@ -8,3 +8,5 @@ economic_dataset <- read.csv("economic_status.csv")
 
 head(economic_dataset)
 
+### View the full dataset
+View(economic_dataset)
