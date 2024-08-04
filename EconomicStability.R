@@ -18,3 +18,6 @@ str(economic_dataset)
 
 ### check the null values
 economic_dataset[!complete.cases(economic_dataset)]
+
+### summary statistics
+summary(economic_dataset)
