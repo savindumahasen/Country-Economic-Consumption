@@ -45,3 +45,17 @@ lillie.test(GDP)
 ## Shapiro-Wiki testing
 
 shapiro.test(GDP)
+
+## Montacarlo graph
+hist(GDP, 
+     xlab="category",
+     ylab = "GDP",
+     main = "GDP Data Distribution", prob=TRUE)
+
+
+curve(dnorm(x, mean=mean(GDP, na.rm=TRUE), 
+            sd=sd(GDP, na.rm =TRUE)), add=TRUE)
+
+
+
+
