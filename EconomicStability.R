@@ -14,3 +14,7 @@ View(economic_dataset)
 
 ### check the data types
 str(economic_dataset)
+
+
+### check the null values
+economic_dataset[!complete.cases(economic_dataset)]
