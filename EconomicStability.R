@@ -37,3 +37,11 @@ library(nortest)
 ## andersondarling test
 
 ad.test(GDP)
+
+## Lillifor testing
+
+lillie.test(GDP)
+
+## Shapiro-Wiki testing
+
+shapiro.test(GDP)
