@@ -22,5 +22,14 @@ economic_dataset[!complete.cases(economic_dataset)]
 ### summary statistics
 summary(economic_dataset)
 
+### attach the dataset
+attach(economic_dataset)
+
+### view the dataset
+View(economic_dataset)
+
 ## Normality testing
 install.packages('nortest')
+
+## andersondarling test
+ad.test()
