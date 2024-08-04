@@ -31,5 +31,9 @@ View(economic_dataset)
 ## Normality testing
 install.packages('nortest')
 
+## call the library
+library(nortest)
+
 ## andersondarling test
-ad.test()
+
+ad.test(GDP)
