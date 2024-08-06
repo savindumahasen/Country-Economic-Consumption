@@ -68,6 +68,13 @@ lillie.test(Unemployment_Rate)
 
 shapiro.test(Unemployment_Rate)
 
+## Monta carlo graph
+hist(Unemployment_Rate,
+     main="Unemployment_Rate Distribution",
+     xlab = "Category",
+     ylab = "Unemployment_Rate", prob = TRUE)
 
+curve(dnorm(x,mean=mean(Unemployment_Rate, na.rm =TRUE),
+            sd=sd(Unemployment_Rate, na.rm = TRUE)), add=TRUE)
 
 
