@@ -56,6 +56,18 @@ hist(GDP,
 curve(dnorm(x, mean=mean(GDP, na.rm=TRUE), 
             sd=sd(GDP, na.rm =TRUE)), add=TRUE)
 
+## andersondarling test 
+
+ad.test(Unemployment_Rate)
+
+## Lillifor test
+
+lillie.test(Unemployment_Rate)
+
+## Shapiro-wiki test
+
+shapiro.test(Unemployment_Rate)
+
 
 
 
