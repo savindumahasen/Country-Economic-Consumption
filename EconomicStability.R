@@ -115,3 +115,10 @@ hist(Interest_Rate, main = "Interst_Rate Distribution",
 curve(dnorm(x,mean=mean(Interest_Rate, na.rm=TRUE),
             sd=sd(Interest_Rate, na.rm=TRUE)), add=TRUE)
 
+## QQ plot
+
+with(economic_dataset, qqPlot(Inflation_Rate, dist="norm", 
+                              id=list(method="y", n=2, labels=rownames(economic_dataset)), 
+                              xlab="Category", ylab="Inflation_Rate", 
+                              main="Inflation_Rate Quantile Graph"))
+
