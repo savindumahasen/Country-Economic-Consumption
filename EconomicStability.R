@@ -117,8 +117,8 @@ curve(dnorm(x,mean=mean(Interest_Rate, na.rm=TRUE),
 
 ## QQ plot
 
-with(economic_dataset, qqPlot(Inflation_Rate, dist="norm", 
+with(economic_dataset, qqPlot(Interest_Rate, dist="norm", 
                               id=list(method="y", n=2, labels=rownames(economic_dataset)), 
-                              xlab="Category", ylab="Inflation_Rate", 
-                              main="Inflation_Rate Quantile Graph"))
+                              xlab="Category", ylab="Interest_Rate", 
+                              main="Interest_Rate Quantile Graph"))
 
