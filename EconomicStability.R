@@ -55,6 +55,18 @@ hist(GDP,
 
 curve(dnorm(x, mean=mean(GDP, na.rm=TRUE), 
             sd=sd(GDP, na.rm =TRUE)), add=TRUE)
+## Install the library
+install.packages('Rcmdr')
+
+## Call the library
+library('Rcmdr')
+
+## QQ plot for GDP
+
+with(economic_dataset, qqPlot(GDP, dist="norm", id=list(method="y", n=2, 
+            labels=rownames(economic_dataset)), xlab="category", ylab="GDP", 
+            main="GDP Quantile Graph"))
+
 
 ## andersondarling test 
 
