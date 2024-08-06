@@ -88,5 +88,10 @@ hist(Unemployment_Rate,
 
 curve(dnorm(x,mean=mean(Unemployment_Rate, na.rm =TRUE),
             sd=sd(Unemployment_Rate, na.rm = TRUE)), add=TRUE)
+## QQ plot for Unemployment_Rate
+with(economic_dataset, qqPlot(Unemployment_Rate, dist="norm", 
+                              id=list(method="y", n=2, labels=rownames(economic_dataset)), 
+                              xlab="category", ylab="Unemployment_Rate", 
+                              main="Unemployment_Rate Quantile Graph"))
 
 
