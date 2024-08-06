@@ -94,4 +94,15 @@ with(economic_dataset, qqPlot(Unemployment_Rate, dist="norm",
                               xlab="category", ylab="Unemployment_Rate", 
                               main="Unemployment_Rate Quantile Graph"))
 
+##andersondarling test
+
+ad.test(Interest_Rate)
+
+## lillifor testing
+
+lillie.test(Interest_Rate)
+
+## Shapiro-wiki test
+
+shapiro.test(Interest_Rate)
 
