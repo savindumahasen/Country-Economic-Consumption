@@ -106,3 +106,12 @@ lillie.test(Interest_Rate)
 
 shapiro.test(Interest_Rate)
 
+## Montercarlo graph
+hist(Interest_Rate, main = "Interst_Rate Distribution",
+     xlab = "Category", ylab="Interst_Rate",
+     probability = TRUE)
+
+## bell curve
+curve(dnorm(x,mean=mean(Interest_Rate, na.rm=TRUE),
+            sd=sd(Interest_Rate, na.rm=TRUE)), add=TRUE)
+
