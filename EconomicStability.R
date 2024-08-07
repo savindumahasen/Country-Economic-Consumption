@@ -193,6 +193,11 @@ summary(Consumption)
 
 cor.test(Consumption,GDP, method = "pearson", alternative = "two.sided")
 
+## Scatterplot Diagram
+
+scatterplot(Consumption~GDP, regLine=TRUE, smooth=FALSE, boxplots=FALSE, 
+            xlab="GDP", ylab="Consumption", main="Cosumption vs GDP correlation", 
+            data=economic_dataset)
 
 
 
