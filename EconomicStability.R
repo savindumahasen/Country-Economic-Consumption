@@ -67,6 +67,9 @@ with(economic_dataset, qqPlot(GDP, dist="norm", id=list(method="y", n=2,
             labels=rownames(economic_dataset)), xlab="category", ylab="GDP", 
             main="GDP Quantile Graph"))
 
+## summary statistics
+summary(GDP)
+
 
 ## andersondarling test 
 
@@ -93,6 +96,9 @@ with(economic_dataset, qqPlot(Unemployment_Rate, dist="norm",
                               id=list(method="y", n=2, labels=rownames(economic_dataset)), 
                               xlab="category", ylab="Unemployment_Rate", 
                               main="Unemployment_Rate Quantile Graph"))
+
+## summary statistics
+summary(Unemployment_Rate)
 
 ##andersondarling test
 
@@ -121,6 +127,9 @@ with(economic_dataset, qqPlot(Interest_Rate, dist="norm",
                               id=list(method="y", n=2, labels=rownames(economic_dataset)), 
                               xlab="Category", ylab="Interest_Rate", 
                               main="Interest_Rate Quantile Graph"))
+## summary statistics
+
+summary(Interest_Rate)
 
 ## Normality testing
 
@@ -147,6 +156,9 @@ with(economic_dataset, qqPlot(Inflation_Rate, dist="norm", id=list(method="y",
                                                                 n=2, labels=rownames(economic_dataset)), xlab="Category", 
                               ylab="Inflation_Rate", main="Inflation_Rate Quantile Comparison"))
 
+## summary statistics
+summary(Inflation_Rate)
+
 ## Andersondarling test
 
 ad.test(Consumption)
@@ -171,5 +183,16 @@ curve(dnorm(x, mean=mean(Consumption, na.rm=TRUE), sd=sd(Consumption, na.rm = TR
 with(economic_dataset, qqPlot(Consumption, dist="norm", id=list(method="y", 
    n=2, labels=rownames(economic_dataset)), xlab="Category", 
    ylab="Consumption", main="Consumption Quantile Comparison"))
+
+
+## Summary statistics
+summary(Consumption)
+
+
+## Correlational analysis
+
+cor.test(Consumption,GDP, method = "pearson", alternative = "two.sided")
+
+
 
 
