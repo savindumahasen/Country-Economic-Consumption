@@ -154,3 +154,10 @@ lillie.test(Consumption)
 
 shapiro.test(Consumption)
 
+## Montercarlo graph
+
+hist(Consumption, main="Consumption Distribution",
+     xlab = "Category", ylab="Consumption", probability = TRUE)
+
+## Bell curve
+curve(dnorm(x, mean=mean(Consumption, na.rm=TRUE), sd=sd(Consumption, na.rm = TRUE)), add=TRUE)
