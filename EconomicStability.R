@@ -142,6 +142,9 @@ hist(Inflation_Rate, main="Inflation_Rate Distribution",
 curve(dnorm(x, mean=mean(Inflation_Rate, na.rm=TRUE), sd=sd(Inflation_Rate, na.rm = TRUE)),
       add=TRUE)
 
+## QQ plot
+
+
 ## Andersondarling test
 
 ad.test(Consumption)
@@ -161,3 +164,10 @@ hist(Consumption, main="Consumption Distribution",
 
 ## Bell curve
 curve(dnorm(x, mean=mean(Consumption, na.rm=TRUE), sd=sd(Consumption, na.rm = TRUE)), add=TRUE)
+
+## QQ plot
+with(economic_dataset, qqPlot(Consumption, dist="norm", id=list(method="y", 
+   n=2, labels=rownames(economic_dataset)), xlab="Category", 
+   ylab="Consumption", main="Consumption Quantile Comparison"))
+
+
