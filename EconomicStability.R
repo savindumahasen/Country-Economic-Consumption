@@ -201,6 +201,11 @@ scatterplot(Consumption~GDP, regLine=TRUE, smooth=FALSE, boxplots=FALSE,
 
 cor.test(Consumption,Unemployment_Rate, method = "pearson", alternative = "two.sided")
 
+## Scatterplot Diagram
+
+scatterplot(Consumption~Unemployment_Rate, regLine=TRUE, smooth=FALSE, boxplots=FALSE, 
+            xlab="Unemployment_Rate", ylab="Consumption", main="Cosumption vs Unemployment_Rate", 
+            data=economic_dataset)
 
 
 
