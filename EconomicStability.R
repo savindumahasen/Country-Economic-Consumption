@@ -207,6 +207,11 @@ scatterplot(Consumption~Unemployment_Rate, regLine=TRUE, smooth=FALSE, boxplots=
             xlab="Unemployment_Rate", ylab="Consumption", main="Cosumption vs Unemployment_Rate", 
             data=economic_dataset)
 
+cor.test(Consumption,Interest_Rate, method = "pearson", alternative = "two.sided")
+
+
+
+
 
 
 
