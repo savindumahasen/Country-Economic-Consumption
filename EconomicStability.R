@@ -222,7 +222,7 @@ scatterplot(Consumption~Inflation_Rate, regLine=TRUE, smooth=FALSE, boxplots=FAL
 
 
 ## Regression analysis
-
+## Simple linear regression model
 simple_linear_model <- lm(Consumption~GDP, model=TRUE)
 simple_linear_model
 
