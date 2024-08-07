@@ -199,5 +199,9 @@ scatterplot(Consumption~GDP, regLine=TRUE, smooth=FALSE, boxplots=FALSE,
             xlab="GDP", ylab="Consumption", main="Cosumption vs GDP correlation", 
             data=economic_dataset)
 
+cor.test(Consumption,Unemployment_Rate, method = "pearson", alternative = "two.sided")
+
+
+
 
 
