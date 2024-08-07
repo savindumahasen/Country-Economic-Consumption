@@ -209,7 +209,9 @@ scatterplot(Consumption~Unemployment_Rate, regLine=TRUE, smooth=FALSE, boxplots=
 
 cor.test(Consumption,Interest_Rate, method = "pearson", alternative = "two.sided")
 
-
+scatterplot(Consumption~Interest_Rate, regLine=TRUE, smooth=FALSE, boxplots=FALSE, 
+            xlab="Interest_Rate", ylab="Consumption", main="Cosumption vs Interest_Rate", 
+            data=economic_dataset)
 
 
 
