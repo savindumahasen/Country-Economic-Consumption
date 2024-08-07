@@ -122,3 +122,35 @@ with(economic_dataset, qqPlot(Interest_Rate, dist="norm",
                               xlab="Category", ylab="Interest_Rate", 
                               main="Interest_Rate Quantile Graph"))
 
+## Normality testing
+
+ad.test(Inflation_Rate)
+
+## Lillifor testing
+
+lillie.test(Inflation_Rate)
+
+## Shapiro-wiki test
+
+shapiro.test(Inflation_Rate)
+
+## Montercarlo graph
+hist(Inflation_Rate, main="Inflation_Rate Distribution",
+     xlab= "Category", ylab = "Inflation_Rate", prob=TRUE)
+
+## curve
+curve(dnorm(x, mean=mean(Inflation_Rate, na.rm=TRUE), sd=sd(Inflation_Rate, na.rm = TRUE)),
+      add=TRUE)
+
+## Andersondarling test
+
+ad.test(Consumption)
+
+## Lillifor test
+
+lillie.test(Consumption)
+
+## shapiro-wiki test
+
+shapiro.test(Consumption)
+
