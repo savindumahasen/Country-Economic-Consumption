@@ -213,6 +213,11 @@ scatterplot(Consumption~Interest_Rate, regLine=TRUE, smooth=FALSE, boxplots=FALS
             xlab="Interest_Rate", ylab="Consumption", main="Cosumption vs Interest_Rate", 
             data=economic_dataset)
 
+cor.test(Consumption,Inflation_Rate, method = "pearson", alternative = "two.sided")
+
+
+
+
 
 
 
