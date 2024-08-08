@@ -113,7 +113,7 @@ lillie.test(Interest_Rate)
 shapiro.test(Interest_Rate)
 
 ## Montercarlo graph
-hist(Interest_Rate, main = "Interst_Rate Distribution",
+hist(Interest_Rate, main = "Interest_Rate Distribution",
      xlab = "Category", ylab="Interst_Rate",
      probability = TRUE)
 
@@ -223,10 +223,12 @@ scatterplot(Consumption~Inflation_Rate, regLine=TRUE, smooth=FALSE, boxplots=FAL
 
 ## Regression analysis
 ## Simple linear regression model
+
 simple_linear_model <- lm(Consumption~GDP, model=TRUE)
 simple_linear_model
 
 ##summary statistics
+
 summary(simple_linear_model)
 
 
